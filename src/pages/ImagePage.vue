@@ -3,10 +3,10 @@ import { ElLoading } from "element-plus";
 
 export default {
   name: "ImagePage",
-  computed: {
-    viewSrc() {
-      return decodeURIComponent(this.$route.query.s);
-    },
+  data() {
+    return {
+      viewSrc: "",
+    };
   },
   mounted() {
     const loading = ElLoading.service({
@@ -15,6 +15,7 @@ export default {
       background: "rgba(0, 0, 0, 0.7)",
     });
     setTimeout(() => {
+      this.viewSrc = decodeURIComponent(this.$route.query.s);
       loading.close();
     }, 2000);
   },
@@ -29,7 +30,7 @@ export default {
 <template>
   <div style="height: 100%">
     <div class="image-page">
-      <img class="image-view" :src="viewSrc" />
+      <img class="image-view" :src="viewSrc" v-if="viewSrc" />
 
       <button class="finish-button" @click="onFinish">Finish</button>
     </div>
