@@ -3,7 +3,7 @@ import HomeMenu from "@/HomeMenu.vue";
 import { RouterView } from "vue-router";
 
 export default {
-  name: "HomeView",
+  name: "HomePage",
   components: {
     HomeMenu,
   },
@@ -12,7 +12,7 @@ export default {
 
 <template>
   <div style="height: 100%">
-    <div class="home-view">
+    <div class="home-page">
       <el-container>
         <el-aside width="200px">
           <el-scrollbar>

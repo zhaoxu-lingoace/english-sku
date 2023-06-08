@@ -2,7 +2,7 @@
 import BootOption from "@/BootOption.vue";
 
 export default {
-  name: "BootView",
+  name: "BootPage",
   components: {
     BootOption,
   },
@@ -25,7 +25,7 @@ export default {
 
 <template>
   <div style="height: 100%">
-    <div class="boot-view">
+    <div class="boot-page">
       <div class="main">
         <div class="title">See where to start</div>
         <div class="content">
@@ -39,7 +39,7 @@ export default {
 </template>
 
 <style lang="scss">
-.boot-view {
+.boot-page {
   height: 100%;
   display: flex;
   justify-content: center;
