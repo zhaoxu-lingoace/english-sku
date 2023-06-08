@@ -2,12 +2,17 @@
 export default {
   name: 'BootOption',
   props: ['value'],
+  methods: {
+    onClick() {
+      this.$router.push('/home')
+    }
+  }
 }
 </script>
 
 <template>
   <div>
-    <div class="boot-option">
+    <div class="boot-option" @click="onClick">
       <div class="title">{{ value.title }}</div>
       <div class="subtitle">{{ value.subtitle }}</div>
     </div>
