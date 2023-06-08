@@ -6,9 +6,6 @@ export default {
   components: {
     RouterView,
   },
-  created() {
-    this.$router.push("/boot");
-  },
 };
 </script>
 

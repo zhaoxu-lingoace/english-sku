@@ -4,7 +4,9 @@ export default {
   props: ["value"],
   methods: {
     onClick() {
-      this.$router.push("/");
+      location.assign(
+        "https://test-cdn.lingo-ace.com/teach/dev/CourseTest/index.html?preTempId=edf0017d-44dd-4b2a-b813-07c73622dfb4&isPreview=1&loginType=0"
+      );
     },
   },
 };

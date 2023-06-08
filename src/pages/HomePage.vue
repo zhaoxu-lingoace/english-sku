@@ -29,3 +29,12 @@ export default {
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.home-page {
+  height: 100%;
+  .el-container {
+    height: 100%;
+  }
+}
+</style>
