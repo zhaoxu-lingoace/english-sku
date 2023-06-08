@@ -6,6 +6,11 @@ export default {
   components: {
     RouterView,
   },
+  created() {
+    if (process.env.NODE_ENV === "production") {
+      this.$router.push("/boot");
+    }
+  },
 };
 </script>
 
