@@ -1,11 +1,9 @@
 <script>
 export default {
-  name: 'HomeView'
-}
+  name: "HomeView",
+};
 </script>
 
 <template>
-    <main>
-    Hello World!
-  </main>
+  <main>Hello World!</main>
 </template>

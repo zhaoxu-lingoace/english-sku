@@ -1,41 +1,41 @@
 <script>
-import BootOption from '@/BootOption.vue'
+import BootOption from "@/BootOption.vue";
 
 export default {
-  name: 'BootView',
+  name: "BootView",
   components: {
-    BootOption
+    BootOption,
   },
   data() {
     return {
       options: [
         {
-          title: 'Is it the first time to learn English?',
-          subtitle: 'From the ground up!'
+          title: "Is it the first time to learn English?",
+          subtitle: "From the ground up!",
         },
         {
-          title: 'Not an English beginner?',
-          subtitle: 'Let\'s see where you are now!'
-        }
-      ]
-    }
-  }
-}
+          title: "Not an English beginner?",
+          subtitle: "Let's see where you are now!",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <template>
-    <div style="height: 100%;">
-      <div class="boot-view">
-        <div class="main">
-          <div class="title">See where to start</div>
-          <div class="content">
-            <div class="option" v-for="(v, i) in options" :key="i">
-              <BootOption :value="v"></BootOption>
-            </div>
+  <div style="height: 100%">
+    <div class="boot-view">
+      <div class="main">
+        <div class="title">See where to start</div>
+        <div class="content">
+          <div class="option" v-for="(v, i) in options" :key="i">
+            <BootOption :value="v"></BootOption>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <style lang="scss">

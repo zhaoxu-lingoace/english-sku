@@ -1,13 +1,13 @@
 <script>
 export default {
-  name: 'BootOption',
-  props: ['value'],
+  name: "BootOption",
+  props: ["value"],
   methods: {
     onClick() {
-      this.$router.push('/home')
-    }
-  }
-}
+      this.$router.push("/home");
+    },
+  },
+};
 </script>
 
 <template>
@@ -23,7 +23,7 @@ export default {
 .boot-option {
   width: 228px;
   height: 220px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px 10px 10px 10px;
   border: 1px solid rgba(112, 112, 112, 0.31);
   box-sizing: border-box;

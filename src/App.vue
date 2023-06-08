@@ -1,15 +1,15 @@
 <script>
-import { RouterView } from 'vue-router'
+import { RouterView } from "vue-router";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    RouterView
+    RouterView,
   },
   created() {
-    this.$router.push('/boot')
-  }
-}
+    this.$router.push("/boot");
+  },
+};
 </script>
 
 <template>
