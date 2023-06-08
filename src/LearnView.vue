@@ -14,7 +14,15 @@ export default {
       return data.class;
     },
     onClickNodeContent() {
-      location.assign("");
+      this.$router.push({
+        path: "/unity",
+        query: {
+          s: encodeURIComponent(
+            "https://cdn.lingo-ace.com/teach/pro/UnityHomeWork/index.html?redisKey=c39cf4e3-3523-45e6-8d2b-169107efcd1c&isPreView=1"
+          ),
+          p: "/",
+        },
+      });
     },
   },
   mounted() {
