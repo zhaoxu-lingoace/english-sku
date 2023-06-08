@@ -1,15 +1,15 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "@/views/HomePage.vue";
-import BootPage from "@/views/BootPage.vue";
-import LearnView from "@/views/LearnView.vue";
+import HomePage from "@/pages/HomePage.vue";
+import BootPage from "@/pages/BootPage.vue";
+import LearnView from "@/LearnView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      name: "home",
       component: HomePage,
+      redirect: "learn",
       children: [
         {
           path: "learn",
@@ -19,7 +19,6 @@ const router = createRouter({
     },
     {
       path: "/boot",
-      name: "boot",
       component: BootPage,
     },
   ],

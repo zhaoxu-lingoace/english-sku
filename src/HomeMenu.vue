@@ -6,8 +6,8 @@ export default {
 
 <template>
   <div>
-    <el-menu default-active="learn" router>
-      <el-sub-menu index="learn">Learn</el-sub-menu>
+    <el-menu :default-active="$route.path" router>
+      <el-menu-item index="/learn">Learn</el-menu-item>
     </el-menu>
   </div>
 </template>

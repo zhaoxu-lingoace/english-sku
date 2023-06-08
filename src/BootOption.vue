@@ -4,7 +4,7 @@ export default {
   props: ["value"],
   methods: {
     onClick() {
-      this.$router.push("/home");
+      this.$router.push("/");
     },
   },
 };
