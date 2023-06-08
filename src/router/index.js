@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "@/views/HomeView.vue";
-import BootView from "@/views/BootView.vue";
+import HomePage from "@/views/HomePage.vue";
+import BootPage from "@/views/BootPage.vue";
 import LearnView from "@/views/LearnView.vue";
 
 const router = createRouter({
@@ -9,7 +9,7 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: HomeView,
+      component: HomePage,
       children: [
         {
           path: "learn",
@@ -20,7 +20,7 @@ const router = createRouter({
     {
       path: "/boot",
       name: "boot",
-      component: BootView,
+      component: BootPage,
     },
   ],
 });
