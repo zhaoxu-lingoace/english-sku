@@ -1,5 +1,6 @@
 <script>
 import { ArrowLeft, ArrowRight } from "@element-plus/icons-vue";
+import courseData1Src from "./course-data-1.png";
 
 export default {
   name: "CoursePage",
@@ -17,8 +18,8 @@ export default {
       courseData: [
         {
           title: "知识点介绍",
-          src: "",
-          srcType: "",
+          src: courseData1Src,
+          srcType: "image",
         },
         {
           title: "认识单词",
@@ -67,20 +68,7 @@ export default {
       this.loadCourse();
     },
     onClickFinish() {
-      const path = this.$route.query.p;
-      if (path) {
-        this.$router.push(path);
-        return;
-      }
-
-      this.$router.push({
-        path: "/image",
-        query: {
-          s: encodeURIComponent(
-            "https://cdn.lingo-ace.com/analysis/study/static/img/zh-CN-level-0.faf8eb56.png"
-          ),
-        },
-      });
+      this.$router.back();
     },
     loadCourse() {
       const courseDataItem = this.courseData[this.courseDataIndex];
@@ -123,12 +111,12 @@ export default {
 
       <div class="footer">
         <div class="pagination">
-          <el-button
-            :style="{ visibility: prevCourseTitle ? 'visible' : 'collapse' }"
-            @click="onClickPrev"
-            ><el-icon class="el-icon--right"><ArrowLeft /></el-icon
+          <el-button v-if="prevCourseTitle" @click="onClickPrev"
+            ><el-icon class="el-icon--left"><ArrowLeft /></el-icon
             >{{ prevCourseTitle }}</el-button
           >
+          <div v-else></div>
+
           <el-button @click="onClickNext" v-if="nextCourseTitle">
             {{ nextCourseTitle
             }}<el-icon class="el-icon--right"><ArrowRight /></el-icon>

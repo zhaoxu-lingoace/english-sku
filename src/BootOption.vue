@@ -4,7 +4,14 @@ export default {
   props: ["value"],
   methods: {
     onClick() {
-      this.$router.push("/course");
+      this.$router.push({
+        path: "/unity",
+        query: {
+          s: encodeURIComponent(
+            'https://cdn.lingo-ace.com/teach/pro/CourseTest/index.html?preTempId=9d025a76-6b7c-47ad-a6be-30bc44365d30&isPreview=1&loginType=0"'
+          ),
+        },
+      });
     },
   },
 };

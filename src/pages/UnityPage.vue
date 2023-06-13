@@ -14,20 +14,6 @@ export default {
         return;
       }
 
-      const count = this.$route.query.c || "1";
-      if (count !== "3") {
-        this.$router.push({
-          path: "/unity",
-          query: {
-            s: encodeURIComponent(
-              'https://cdn.lingo-ace.com/teach/pro/CourseTest/index.html?preTempId=9d025a76-6b7c-47ad-a6be-30bc44365d30&isPreview=1&loginType=0"'
-            ),
-            c: Number(count) + 1,
-          },
-        });
-        return;
-      }
-
       this.$router.push({
         path: "/image",
         query: {
