@@ -54,5 +54,6 @@ export default {
   width: 100px;
   height: 50px;
   border: 0;
+  cursor: pointer;
 }
 </style>

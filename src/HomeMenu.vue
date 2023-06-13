@@ -14,8 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 .home-menu {
-  border-right: none;
-
+  min-height: 100vh;
   :deep(.el-menu-item) {
     justify-content: center;
   }
