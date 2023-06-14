@@ -85,7 +85,6 @@ export default {
         border-radius: 12px;
         box-sizing: border-box;
         padding: 24px 0 0 15px;
-        cursor: pointer;
         .title {
           font-size: var(--el-font-size-extra-large);
           font-weight: bold;
