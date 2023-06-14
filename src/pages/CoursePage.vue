@@ -33,9 +33,8 @@ export default {
         },
         {
           title: "单词练习",
-          src: "iframe",
-          srcType:
-            "https://test-cdn.lingo-ace.com/teach/dev/UnityHomeWork/index.html?redisKey=f7323139-b2ea-4f55-adbb-0be7962ccf45&isPreView=1",
+          src: "https://test-cdn.lingo-ace.com/teach/dev/UnityHomeWork/index.html?redisKey=f7323139-b2ea-4f55-adbb-0be7962ccf45&isPreView=1",
+          srcType: "iframe",
         },
         {
           title: "认识句型",
