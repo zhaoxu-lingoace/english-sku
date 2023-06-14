@@ -19,6 +19,10 @@ export default {
 </template>
 
 <style lang="scss">
+:root {
+  --brand-color: #7580e5;
+}
+
 body {
   margin: 0;
   padding: 0;

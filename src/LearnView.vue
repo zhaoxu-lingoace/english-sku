@@ -75,12 +75,13 @@ export default {
   .schedule {
     width: 500px;
     box-sizing: border-box;
-    padding: 24px 14px 100px;
+    padding: 0 14px 100px;
+    margin-top: -32px;
     .unit {
       margin-top: 32px;
       .item {
         height: 112px;
-        background: #58cc02;
+        background: var(--brand-color);
         border-radius: 12px;
         box-sizing: border-box;
         padding: 24px 0 0 15px;
